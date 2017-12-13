@@ -1,15 +1,11 @@
 $(document).ready(function () {
-      
+ /*Funcion para mostrar el modal*/     
     $("#cfood").click(function () {
 
-        $("miModal").show();
+       $("miModal").show();
         
  });
-
-
-
-
-
+ /*funciones para visualizar y ocultar las imágenes, según su clase*/
     $("#chilena").click(function() {
        $(".chilean").css("display", "block");
        $(".others").css("display", "none");
