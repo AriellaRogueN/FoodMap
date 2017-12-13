@@ -1,5 +1,14 @@
 $(document).ready(function () {
- /*Funcion para mostrar el modal*/     
+/*Funcion para cambiar opacidad de las imagenes al pasar el mouse*/
+ $("img").mouseover(function () {
+    $("img").css("opacity", "0.5");
+
+}).mouseout(function () {
+    $('img').css("opacity","1");
+
+});
+
+/*Funcion para mostrar el modal*/     
     $("#cfood").click(function () {
 
        $("miModal").show();
