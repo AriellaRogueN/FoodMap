@@ -15,6 +15,21 @@
 </head>
 
 <body>
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Comida Chilena</h4>
+      </div>
+      <div class="modal-body">
+        <h4>El meson Nerudianno</h4>
+      </div>
+    </div>
+  </div>
+</div>
   <div class="container-fluid">
     <div class="row">
       <div id="title" class="col-xs-12  col-sm-12 text-center ">
@@ -60,30 +75,31 @@
               </li>
               <li role="separator" class="divider"></li>
               <li>
-                <a href="#">Todos</a>
+                <a id="all"href="#">Todos</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+
     <div id="imagenes" class="container-fluid">
 
       <div id="picture-2" class="row">
-        <div id="chi"class="chilean col-xs-6 col-sm-6 col-xs-push-1 col-sm-push-1">
-          <img class=" img-responsive img-circle" src="assets/images/chilena.jpg" alt="food-4">
+        <div class="chilean col-xs-6 col-sm-6 col-xs-push-1 col-sm-push-1">
+          <img id="cfood" class=" img-responsive img-circle" src="assets/images/chilena.jpg" alt="food-4" data-toggle="modal" data-target="#miModal">
         </div>
-          <div id="img" class="others col-xs-6 col-sm-6 ">
-          <img class=" img-responsive img-circle" src="assets/images/food.jpg" alt="food-5">
+          <div  class="others col-xs-6 col-sm-6 ">
+          <img  id="ffood"class=" img-responsive img-circle" src="assets/images/food.jpg" alt="food-5">
         </div>
 
       </div>
       <div id="pictures" class="row">
-        <div id="img" class=" fast col-xs-6 col-sm-6">
-          <img class=" img-responsive img-circle" src="assets/images/rapida.jpg" alt="food">
+        <div  class=" fast col-xs-6 col-sm-6">
+          <img id="fafood" class=" img-responsive img-circle" src="assets/images/rapida.jpg" alt="food">
         </div>
-        <div id="img" class=" rest col-xs-6 col-sm-6 ">
-          <img class="img-responsive img-circle " src="assets/images/cocktails-93770.jpg" alt="food-2">
+        <div  class=" rest col-xs-6 col-sm-6 ">
+          <img id="rfood"class="img-responsive img-circle " src="assets/images/cocktails-93770.jpg" alt="food-2">
         </div </div>
       </div>
     </div>
