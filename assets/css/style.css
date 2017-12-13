@@ -1,0 +1,39 @@
+body{
+    background-color: #2F2F2F;
+}
+
+#title h1{
+ color:rgb(255, 136, 0);
+ font-size: 3em;
+}
+
+
+#map{
+    margin:2em;
+}
+
+#food{
+    color:rgb(255, 136, 0);
+    font-size: 2em;
+   
+}
+
+#searching{
+    cursor: pointer;
+    margin-left:5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+#searching
+
+#pictures{
+    margin-top: 2em;
+}
+
+#picture-2{
+    margin-right: 1.3em; 
+    margin-bottom: 2em;
+}
+
