@@ -42,7 +42,7 @@ var data = {
                'telefono': ' +56 9 8931 8897'
             },
             {
-                'name': 'Restaurant Youfa',
+                'name': 'Restaurant Yufa',
                 'picture': 'images/extranjera/yufa.jpg',
                 'direccion': 'Manuel Rodríguez 80, Rengo, VI Región',
                 'telefono': '(72) 251 4099 '
@@ -61,7 +61,7 @@ var data = {
             }
         ]
     },
-    'rápida': {
+    'rapida': {
         'datos': [{
                 'name': 'Chicago Corner Pizza',
                 'picture': 'images/rapida/corner.jpg',

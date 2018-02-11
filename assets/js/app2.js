@@ -27,8 +27,8 @@ $(document).ready(function () {
   
     var chilena = data.chilena.datos;
     var extranjera = data.extranjera.datos;
-//var rapida  = data.rapida.datos;
-    //var restoBar = data.bar.datos;
+    var rapida  = data.rapida.datos;
+    var restoBar = data.bar.datos;
 
     //al hacer click en el boton que se muestren las imagenes, antes hay que recorrerlas.
 
@@ -50,10 +50,36 @@ $(document).ready(function () {
 
             $(".chilena, .rapida, .resto-bar, .all").empty();
 
-            $(".chilena").append("<div class='row animal'>" +
+            $(".extranjera").append("<div class='row animal'>" +
                 "<div class='col-md-6 text-center'>" + "<img width='200' height='200' src='assets/" + extranjera[i].picture + "'>" + "</div>" +
                 "<div class='col-md-6'>" +
                 "<h3>" + extranjera[i].name + "</h3>" +
+                "</div></div>");
+        }
+    });
+
+    $("#img3").click(function () {
+        for (var i = 0; i < rapida.length; i++) {
+
+            $(".chilena, .extranjera, .resto-bar, .all").empty();
+
+            $(".rapida").append("<div class='row animal'>" +
+                "<div class='col-md-6 text-center'>" + "<img width='200' height='200' src='assets/" + rapida[i].picture + "'>" + "</div>" +
+                "<div class='col-md-6'>" +
+                "<h3>" + rapida[i].name + "</h3>" +
+                "</div></div>");
+        }
+    });
+
+    $("#img4").click(function () {
+        for (var i = 0; i < restoBar.length; i++) {
+
+            $(".extranjera, .rapida, .chilena, .all").empty();
+
+            $(".resto-bar").append("<div class='row animal'>" +
+                "<div class='col-md-6 text-center'>" + "<img width='200' height='200' src='assets/" + restoBar[i].picture + "'>" + "</div>" +
+                "<div class='col-md-6'>" +
+                "<h3>" + restoBar[i].name + "</h3>" +
                 "</div></div>");
         }
     });
