@@ -11,15 +11,18 @@
         <link rel="stylesheet" href="assets/css/style2.css">
 </head>
 <body>
-    <div class="container">
+    <header>
+      <div class="container">
         <div class="row">
             <div class="col -md-12 col-sm-12 col-xs-12 text-center">
               <h2>Food Map</h2>
-              <h4>In Rengo</h4>
+              <h4> Rengo</h4>
               <hr>
             </div>
         </div>
     </div>
+    </header>
+    <section id="s-1">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 text-center">
@@ -28,11 +31,20 @@
             </div>
         </div>
     </div>
+    </section>
+    <section>
+        <div class="row hidden-xs hidden-sm">
+            <div class="col-md-12">
+            <h4>Selecciona restaurantes</h4>
+            </div>
+        </div>
+    </section>
+    <section id="s-2">
     <div class="container">
-        <div class="row">
+        <div class="row hidden-md hidden-lg">
             <div class="col md-12 sm-12 xs-12 text-center">
                 <h3>Comida cerca de ti</h3>
-                <div class="btn-group dropup">
+                  <div class="btn-group dropdown">
                     <button type="button" class="btn btn-default">Filtrar Restaurantes</button>
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="caret"></span>
@@ -41,20 +53,20 @@
                     <ul class="dropdown-menu">
                         <!-- Dropdown menu links -->
                         <li>
-                            <a id="chilena" href="#">Comida Chilena</a>
+                            <a id="comida-chilena" href="#">Comida Chilena</a>
                         </li>
                         <li>
-                            <a id="extranjera" href="#">Comida Extranjera</a>
+                            <a id="comida-extranjera" href="#">Comida Extranjera</a>
                         </li>
                         <li>
-                            <a id="rapida" href="#">Comida Rápida</a>
+                            <a id="comida-rapida" href="#">Comida Rápida</a>
                         </li>
                         <li>
-                            <a id="resto-bar" href="#">Resto-Bar</a>
+                            <a id="bar-restaurant" href="#">Resto-Bar</a>
                         </li>
                         <li role="separator" class="divider"></li>
                         <li>
-                            <a id="all" href="#">Todos</a>
+                            <a id="Todos" href="#">Todos</a>
                         </li>
                         </ul>
                     </ul>
@@ -63,8 +75,10 @@
             </div>
         </div>
     </div>
+    </section>
+    <section id="s-3">
     <div class="container images">
-        <div class="row">
+        <div class="row hidden-xs hidden-sm">
             <div class="col-md-3 sm-6 xs-6">
               <figure>
                  <img id="img1" class= "img-responsive img-circle" src="assets/images/chilena.jpg" width="300" height="200" alt="Comida Chilena"> 
@@ -87,12 +101,17 @@
             </div>
         </div>
     </div>
+    </section>
     <!--Div contenedor de imagenes e info-->
-    <div  class="container chilena"></div>
+    <section id="s-4">
+       
+    <div class="container chilena"></div>
     <div class="container extranjera"></div>
     <div class="container rapida"></div>
     <div class="container resto-bar"></div>
     <div class="container all"></div>
+   
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
