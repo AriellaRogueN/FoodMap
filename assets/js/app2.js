@@ -38,12 +38,12 @@ $(document).ready(function () {
 
             $(".extranjera, .rapida, .resto-bar, .all").empty();
 
-            $(".chilena").append("<div class='row'>" + 
-                "<div class='col-md-6 text-center newImg'>" + "<img class='Img' width='200' height='200' src='assets/" + chilena[i].picture + "'>" + "</div>" +
-                "<div class='col-md-6'>" +
-                "<h3>" + chilena[i].name + "</h3>" +
+            $(".chilena").append("<div class='row'>" +
+                "<div class='col-md-6 text-center newImg'>" + "<img id='chileanPictures' class='Img' width='200' height='200' src='assets/" + chilena[i].picture + "'>" + "</div>" + 
+                "<div class='col-md-6'>" + 
+                "<h3>" + chilena[i].name + "</h3>" +  "<hr>" +
                 "</div></div>");
-        }
+         }
     });
 
     $("#img2").click(function () {
@@ -54,7 +54,7 @@ $(document).ready(function () {
             $(".extranjera").append("<div class='row'>" +
                 "<div class='col-md-6 text-center newImg'>" + "<img class='Img' width='200' height='200' src='assets/" + extranjera[i].picture + "'>" + "</div>" +
                 "<div class='col-md-6'>" +
-                "<h3>" + extranjera[i].name + "</h3>" +
+                "<h3>" + extranjera[i].name + "</h3>" + "<hr>" +
                 "</div></div>");
         }
     });
@@ -67,7 +67,7 @@ $(document).ready(function () {
             $(".rapida").append("<div class='row'>" +
                 "<div class='col-md-6 text-center newImg'>" + "<img class='Img' width='200' height='200' src='assets/" + rapida[i].picture + "'>" + "</div>" +
                 "<div class='col-md-6'>" +
-                "<h3>" + rapida[i].name + "</h3>" +
+                "<h3>" + rapida[i].name + "</h3>" + "<hr>" +
                 "</div>" + "<hr>" + "</div>");
         }
     });
@@ -80,7 +80,7 @@ $(document).ready(function () {
             $(".resto-bar").append("<div class='row'>" +
                 "<div class='col-md-6 text-center newImg'>" + "<img class='Img' width='200' height='200' src='assets/" + restoBar[i].picture + "'>" + "</div>" +
                 "<div class='col-md-6'>" +
-                "<h3>" + restoBar[i].name + "</h3>" +
+                "<h3>" + restoBar[i].name + "</h3>" + "<hr>" +
                 "</div></div>");
         }
     });
@@ -94,7 +94,7 @@ $(document).ready(function () {
             $(".chilena").append("<div class='row'>" +
                 "<div class='col-md-6 text-center'>" + "<img width='200' height='200' src='assets/" + chilena[i].picture + "'>" + "</div>" +
                 "<div class='col-md-6'>" +
-                "<h3>" + chilena[i].name + "</h3>" +
+                "<h3>" + chilena[i].name + "</h3>" + "<hr>" +
                 "</div></div>");
         }
     });
@@ -107,7 +107,7 @@ $(document).ready(function () {
             $(".extranjera").append("<div class='row'>" +
                 "<div class='col-md-6 text-center'>" + "<img width='200' height='200' src='assets/" + extranjera[i].picture + "'>" + "</div>" +
                 "<div class='col-md-6'>" +
-                "<h3>" + extranjera[i].name + "</h3>" +
+                "<h3>" + extranjera[i].name + "</h3>" + "<hr>" +
                 "</div></div>");
         }
     });
@@ -120,7 +120,7 @@ $(document).ready(function () {
             $(".rapida").append("<div class='row'>" +
                 "<div class='col-md-6 text-center'>" + "<img width='200' height='200' src='assets/" + rapida[i].picture + "'>" + "</div>" +
                 "<div class='col-md-6'>" +
-                "<h3>" + rapida[i].name + "</h3>" +
+                "<h3>" + rapida[i].name + "</h3>" + "<hr>" +
                 "</div></div>");
         }
     });
@@ -133,10 +133,30 @@ $(document).ready(function () {
             $(".resto-bar").append("<div class='rowl'>" +
                 "<div class='col-md-6 text-center'>" + "<img width='200' height='200' src='assets/" + restoBar[i].picture + "'>" + "</div>" +
                 "<div class='col-md-6'>" +
-                "<h3>" + restoBar[i].name + "</h3>" +
+                "<h3>" + restoBar[i].name + "</h3>" + "<hr>" +
                 "</div></div>");
         }
     });
+
+   
+
+$("#chileanPictures").click(function () {
+    for (var i = 0; i < chilena.length; i++) {
+    $(".info-chilena").append("<div class='modal fade' tabindex='-1' role='dialog'>" +
+                              "<div class='modal-dialog' role='document'>" +
+                              "<div class='modal-content'>" +
+                              "<div class='modal-header'>" +
+                              "<button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>" +
+                              "<h4 class='modal-title'>" +       + "</h4>" + "</div>" +
+                              "<div class='modal-body'>" +
+                              "<p>" +      +"</p>" + 
+                              "</div></div></div></div>");
+
+
+    };
+
+
+});
 
 
 

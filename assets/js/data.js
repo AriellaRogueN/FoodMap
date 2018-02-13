@@ -48,7 +48,7 @@ var data = {
                 'telefono': '(72) 251 4099 '
             },
             {
-                'name': 'Sushi Sukay',
+                'name': 'Sushi Sukai',
                 'picture': 'images/extranjera/sukai.jpg',
                 'direccion': 'Arturo Prat 631',
                 'telefono': '+56 9 8312 452'
@@ -96,18 +96,26 @@ var data = {
                 'telefono': ' (72) 252 9744'
             },
             {
-                'name': 'Sabrosisimo',
-                'picture': 'images/resto-bar/sabro.jpg',
-                'direccion': 'Urriola 119, Rengo, VI Región',
-                'telefono': ' (72) 268 1272'
+                'name': 'El Bar del Camello',
+                'picture': 'images/resto-bar/20245768_302686143587265_2463631577984888387_n.jpg',
+                'direccion': 'Pje 0 2, Rengo, VI Región',
+                'telefono': ' +56 9 89564095'
             },
+            
             {
                 'name': 'D-Carlitos',
                 'picture': 'images/resto-bar/carlitos.jpg',
                 'direccion': 'Arturo Prat 503, Rengo, VI Región',
                 'telefono': ' (72) 268 1272'
             },
-           
+            {
+                'name': 'Sabrosisimo',
+                'picture': 'images/resto-bar/sabro.jpg',
+                'direccion': 'Urriola 119, Rengo, VI Región',
+                'telefono': ' (72) 268 1272'
+            }, 
         ]
     }
 };
+
+
